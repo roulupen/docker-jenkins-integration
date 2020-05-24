@@ -19,4 +19,9 @@ public class TestController {
 		return "Hello, " + name;
 	}
 	
+	@RequestMapping(method=RequestMethod.GET, path="/final")
+	public String finalMessage() {
+		return "Finally the code commit from local system to Git and then create docker image using Jenkins and " +
+				" push the docker image into docker hub then download the docker image from docker hun and run it.";
+	}
 }

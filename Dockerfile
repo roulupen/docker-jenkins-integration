@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8082
-ADD target/docker-jenkins-integration-0.0.1-SNAPSHOT.jar docker-jenkins-integration-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "/docker-jenkins-integration-0.0.1-SNAPSHOT.jar"]
+ADD target/spring-boot-starter-parent.jar spring-boot-starter-parent.jar
+ENTRYPOINT ["java", "-jar", "/spring-boot-starter-parent.jar"]
